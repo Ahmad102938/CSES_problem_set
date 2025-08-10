@@ -1,4 +1,4 @@
-#include<Bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 const int MAX = 2e5;

@@ -19,7 +19,7 @@ int calHeight(int v, int p){
     return ans;
 }
 
-dfs(int v, int p){
+int dfs(int v, int p){
     int ans = 0;
     priority_queue<int> pq;
     for(int u:adj[v]){
@@ -57,6 +57,10 @@ int main() {
     calHeight(1, 0);
 
     cout<<dfs(1, 0)<<endl;
+    for(int i = 0; i<N; i++){
+        cout<<heights[i]<<" ";
+    }
+    cout<<endl;
 
     return  0;
 }
